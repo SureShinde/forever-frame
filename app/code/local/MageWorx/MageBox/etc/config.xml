@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * MageWorx
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the MageWorx EULA that is bundled with
+ * this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.mageworx.com/LICENSE-1.0.html
+ *
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@mageworx.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade the extension
+ * to newer versions in the future. If you wish to customize the extension
+ * for your needs please refer to http://www.mageworx.com/ for more information
+ * or send an email to sales@mageworx.com
+ *
+ * @category   MageWorx
+ * @package    MageWorx_MageBox
+ * @copyright  Copyright (c) 2010 MageWorx (http://www.mageworx.com/)
+ * @license    http://www.mageworx.com/LICENSE-1.0.html
+ */
+
+/**
+ * MageBox extension
+ *
+ * @category   MageWorx
+ * @package    MageWorx_MageBox
+ * @author     MageWorx Dev Team <dev@mageworx.com>
+ */
+-->
+<config>
+    <modules>
+        <MageWorx_MageBox>
+            <version>1.0.0</version>
+        </MageWorx_MageBox>
+    </modules>
+    
+    <frontend>
+        <translate>
+            <modules>
+                <MageWorx_MageBox>
+                    <files>
+                        <default>MageWorx_MageBox.csv</default>
+                    </files>
+                </MageWorx_MageBox>
+            </modules>
+        </translate>
+        <layout>
+            <updates>
+                <magebox>
+                    <file>magebox.xml</file>
+                </magebox>
+            </updates>
+        </layout>
+    </frontend>
+    
+    <adminhtml>
+        <translate>
+            <modules>
+                <MageWorx_MageBox>
+                    <files>
+                        <default>MageWorx_MageBox.csv</default>
+                    </files>
+                </MageWorx_MageBox>
+            </modules>
+        </translate>
+        <acl>
+            <resources>
+				<all>
+					<title>Allow Everything</title>
+				</all>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <mageworx_tweaks translate="title" module="mageworx">
+                                            <title>MageWorx &gt; Tweaks</title>
+                                            <sort_order>1</sort_order>
+                                            <children>
+                                                <magebox translate="title" module="magebox">
+                                                    <title>MageBox</title>
+                                                </magebox>
+                                            </children>
+                                        </mageworx_tweaks>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+    
+    <global>
+        <helpers>
+            <magebox>
+                <class>MageWorx_MageBox_Helper</class>
+            </magebox>
+        </helpers>
+    </global>
+    
+    <default>
+    	<mageworx_tweaks>
+    		<magebox>
+    		    <enabled>1</enabled>
+    		    <image_size>265x265</image_size>
+    		    <thumb_size>56x56</thumb_size>
+    		    <speed>600</speed>
+    		    <close_speed>300</close_speed>
+    		    <bg_alpha>0.5</bg_alpha>
+    		    <slide_show>1</slide_show>
+    		    <slide_speed>4</slide_speed>
+    		</magebox>
+    	</mageworx_tweaks>
+    </default>
+</config>

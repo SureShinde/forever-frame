@@ -1,0 +1,67 @@
+<?php
+/**
+ * MageWorx
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the MageWorx EULA that is bundled with
+ * this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.mageworx.com/LICENSE-1.0.html
+ *
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@mageworx.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade the extension
+ * to newer versions in the future. If you wish to customize the extension
+ * for your needs please refer to http://www.mageworx.com/ for more information
+ * or send an email to sales@mageworx.com
+ *
+ * @category   design_default
+ * @package    MageWorx_MageBox
+ * @copyright  Copyright (c) 2010 MageWorx (http://www.mageworx.com/)
+ * @license    http://www.mageworx.com/LICENSE-1.0.html
+ */
+
+/**
+ * MageBox extension
+ *
+ * @category   design_default
+ * @package    MageWorx_MageBox
+ * @author     MageWorx Dev Team <dev@mageworx.com>
+ */
+?>
+<?php
+$_product = $this->getProduct();
+$_helper = $this->helper('catalog/output');
+$mageboxConfig = Mage::helper('magebox')->getConfig();
+?>
+<script type="text/javascript">
+$j(document).ready(function() {
+    $j().mageBox({ my_speed: <?php echo $mageboxConfig->getSpeed() ?>, bg_alpha: <?php echo $mageboxConfig->getBgAlpha() ?>, close_speed : <?php echo $mageboxConfig->getCloseSpeed() ?>, close_all : '.mage_close,.mage_overlay', slideShow : <?php echo $mageboxConfig->getSlideShow() ?>, slideSpeed : <?php echo $mageboxConfig->getSlideSpeed() ?> });
+});
+</script>
+<div class="product-photos">
+<a href="<?php echo $this->helper('catalog/image')->init($_product, 'image') ?>" title="<?php echo $this->htmlEscape($this->getImageLabel()) ?>" class="magebox_gall">
+<?php
+    $_img = '<img id="image" src="'.$this->helper('catalog/image')->init($_product, 'image')->resize($mageboxConfig->getImageWidth(), $mageboxConfig->getImageHeight()).'" alt="'.$this->htmlEscape($this->getImageLabel()).'" title="'.$this->htmlEscape($this->getImageLabel()).'" />';
+    echo $_helper->productAttribute($_product, $_img, 'image');
+?></a>
+</div>
+<?php if (count($this->getGalleryImages()) > 0): ?>
+<div class="more-views cf">
+    <h4><?php echo $this->__('Click to Enlarge') ?></h4>
+    <ul>
+    <?php foreach ($this->getGalleryImages() as $_image): ?>
+        <li>
+            <a href="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'image', $_image->getFile()); ?>" title="<?php echo $this->htmlEscape($_image->getLabel() ? $_image->getLabel() : $this->getImageLabel()) ?>" class="magebox_gall">
+                <img src="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'thumbnail', $_image->getFile())->resize($mageboxConfig->getThumbWidth(), $mageboxConfig->getThumbHeight()); ?>" alt="<?php echo $this->htmlEscape($_image->getLabel()) ?>" title="<?php echo $this->htmlEscape($_image->getLabel()) ?>"/>
+            </a>
+        </li>
+    <?php endforeach; ?>
+    </ul>
+</div>
+<?php endif; ?>

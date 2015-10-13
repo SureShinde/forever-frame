@@ -1,0 +1,11 @@
+Error: on:June 3, 2015 9:36 am: theforeverframe Unable to create session.
+Error: on:June 3, 2015 9:36 am: theforeverframe $wppa_opt[wppa_grant_an_album] is not a yes/no setting
+Error: on:June 3, 2015 9:36 am: theforeverframe $wppa_opt[wppa_source_dir] is not a setting
+Error: on:June 3, 2015 9:36 am: theforeverframe $wppa_opt[wppa_max_filename_length] is not a setting
+Debug: on:June 3, 2015 9:36 am: theforeverframe It took 5 retries to start session 1
+Error: on:June 3, 2015 9:36 am: theforeverframe $wppa_opt[wppa_grant_an_album] is not a yes/no setting
+Error: on:June 3, 2015 9:36 am: theforeverframe $wppa_opt[wppa_source_dir] is not a setting
+Error: on:June 3, 2015 9:36 am: theforeverframe $wppa_opt[wppa_max_filename_length] is not a setting
+Error: on:June 3, 2015 9:36 am: theforeverframe $wppa_opt[wppa_cre_uploads_htaccess] is not a setting
+Error: on:June 3, 2015 9:36 am: theforeverframe $wppa_opt[wppa_cre_uploads_htaccess] is not a setting
+Error: on:June 3, 2015 9:36 am: theforeverframe $wppa_opt[wppa_adminbarmenu_admin] is not a setting

@@ -1,0 +1,95 @@
+<section class="right-col">
+
+    <h1>Gallery</h1>
+
+    <article id="wedding">
+        <h2>Weddings</h2>
+        <p>The Unity Sand Ceremony is a popular and tangible way to capture the celebration that is the joining of two lives. By using our unique and beautiful frame for your unity sand ceremony, you'll create a lasting reminder of the ceremony. As the colored sand is poured into The Forever Frame&trade;, the individual containers of sand will cease to exist, but will be joined together as one. Just as your union can never be separated, neither can the grains of sand.</p>
+            <div id="slides">
+            <img src="<?php echo $this->getSkinUrl('images/pic6.jpg') ?>" width="457" height="327" alt="pic6"> 
+            <img src="<?php echo $this->getSkinUrl('images/pic7.jpg') ?>" width="457" height="327" alt="pic7"> 
+            <img src="<?php echo $this->getSkinUrl('images/pic10.jpg') ?>" width="457" height="327" alt="pic10"> 
+            <img src="<?php echo $this->getSkinUrl('images/pic1.jpg') ?>" width="457" height="327" alt="pic1"> 
+            <img src="<?php echo $this->getSkinUrl('images/pic2.jpg') ?>" width="457" height="327" alt="pic2"> 
+            <img src="<?php echo $this->getSkinUrl('images/pic12.jpg') ?>" width="457" height="327" alt="pic12"> 
+            <img src="<?php echo $this->getSkinUrl('images/pic4.jpg') ?>" width="457" height="327" alt="pic4"> 
+            <img src="<?php echo $this->getSkinUrl('images/pic9.jpg') ?>" width="457" height="327" alt="pic9"> 
+            <img src="<?php echo $this->getSkinUrl('images/pic5.jpg') ?>" width="457" height="327" alt="pic5">
+        </div> <!-- end slides -->
+    </article>
+
+
+    <article id="anniversary">
+        <h2>Anniversaries</h2>
+        <p>Look no further than The Forever Frame™ for a tastefully unique gift for any couple. Make their anniversary celebration last with a wonderful photo joined by decorative sand art easily customizable to their home decor and select mementos from the event.</p>
+        <div id="slides">
+            <img src="<?php echo $this->getSkinUrl('images/pic6.jpg') ?>" width="457" height="327" alt="pic6"> 
+            <img src="<?php echo $this->getSkinUrl('images/pic7.jpg') ?>" width="457" height="327" alt="pic7"> 
+            <img src="<?php echo $this->getSkinUrl('images/pic10.jpg') ?>" width="457" height="327" alt="pic10"> 
+            <img src="<?php echo $this->getSkinUrl('images/pic1.jpg') ?>" width="457" height="327" alt="pic1"> 
+            <img src="<?php echo $this->getSkinUrl('images/pic2.jpg') ?>" width="457" height="327" alt="pic2"> 
+            <img src="<?php echo $this->getSkinUrl('images/pic12.jpg') ?>" width="457" height="327" alt="pic12"> 
+            <img src="<?php echo $this->getSkinUrl('images/pic4.jpg') ?>" width="457" height="327" alt="pic4"> 
+            <img src="<?php echo $this->getSkinUrl('images/pic9.jpg') ?>" width="457" height="327" alt="pic9"> 
+            <img src="<?php echo $this->getSkinUrl('images/pic5.jpg') ?>" width="457" height="327" alt="pic5">
+        </div> <!-- end slides -->
+    </article>
+
+
+    <article id="graduation">
+        <h2>Graduations</h2>
+        <p>Every high school and college graduate should have The Forever Frame™ filled with the colors of their school with their favorite graduation day photo to remember the momentous occasion.</p>
+        <div id="slides">
+            <img src="<?php echo $this->getSkinUrl('images/pic6.jpg') ?>" width="457" height="327" alt="pic6"> 
+            <img src="<?php echo $this->getSkinUrl('images/pic7.jpg') ?>" width="457" height="327" alt="pic7"> 
+            <img src="<?php echo $this->getSkinUrl('images/pic10.jpg') ?>" width="457" height="327" alt="pic10"> 
+            <img src="<?php echo $this->getSkinUrl('images/pic1.jpg') ?>" width="457" height="327" alt="pic1"> 
+            <img src="<?php echo $this->getSkinUrl('images/pic2.jpg') ?>" width="457" height="327" alt="pic2"> 
+            <img src="<?php echo $this->getSkinUrl('images/pic12.jpg') ?>" width="457" height="327" alt="pic12"> 
+            <img src="<?php echo $this->getSkinUrl('images/pic4.jpg') ?>" width="457" height="327" alt="pic4"> 
+            <img src="<?php echo $this->getSkinUrl('images/pic9.jpg') ?>" width="457" height="327" alt="pic9"> 
+            <img src="<?php echo $this->getSkinUrl('images/pic5.jpg') ?>" width="457" height="327" alt="pic5">
+        </div> <!-- end slides -->
+    </article>
+
+
+    <article id="birthday">
+        <h2>Birthdays</h2>
+        <p>What do you get for the person who has everything? The Forever Frame™ filled with beautiful sand art in their favorite colors and a photo of the two of you. Add a birthday candle from their party or symbol of your friendship.</p>
+    </article>
+
+
+    <article id="vacation">
+        <h2>Vacations</h2>
+        <p>Show off your favorite romantic tropical vacation in The Forever Frame™. Create a perfect beach theme of beautiful sand, your favorite sunset shot and a starfish from your adventure. Or, create an heirloom for your children of your family cruise or trip to Disney with a favorite photo, their favorite colors in decorative sand art and a small souvenir. Get the children involved, too, by letting them pour the sand!</p>
+    </article>
+
+
+    <article id="engraving">
+        <h2>Engravings</h2>
+        <p>There is no better way to customize your Forever Frame and make it personal than to create a custom engraving.</p>
+    </article>
+
+</section>
+
+<aside class="left-col">
+    <h1>Gallery Categories</h1>
+    <ul id="galcat">
+        <!-- <li><a href="#wedding">Weddings</a></li> -->
+        <li><a href="#anniversary">Anniversaries</a></li>
+        <li><a href="#graduation">Graduations</a></li>
+        <li><a href="#birthday">Birthdays</a></li>
+        <li><a href="#vacation">Vacations</a></li>
+        <li><a href="#engraving">Engravings</a></li>
+    </ul>
+</aside>
+
+<script>
+
+    var galleries = [ "#anniversary", "#graduation", "#birthday", "#vacation", "#engraving" ];
+    for ( i = 0; i < galleries.length; i++ ) {
+        console.log( galleries[i] );
+        $j( galleries[i] ).hide();
+    }
+
+</script>

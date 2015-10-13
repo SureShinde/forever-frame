@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Justuno_Social>
+      <version>1.0.0</version>
+    </Justuno_Social>
+  </modules>
+  <tabs>
+    <social module="social" translate="label">
+        <label>Justuno Social</label>
+        <sort_order>100</sort_order>
+    </social>
+  </tabs>  
+  <global>
+	<models>
+		<social>
+			<class>Justuno_Social_Model</class>
+			<resourceModel>social_embed</resourceModel>			
+		</social>
+		<social_embed>
+			<class>Justuno_Social_Model_Embed</class>
+		</social_embed>
+	</models>
+	<blocks>
+		<social>
+			<class>Justuno_Social_Block</class>
+		</social>
+		<social_domain>
+			<class>Justuno_Social_Block_Domain</class>
+		</social_domain>
+		<social_dashboard>
+			<class>Justuno_Social_Block_Dashboard</class>
+		</social_dashboard>
+	</blocks>
+  </global>
+  <frontend>
+	<layout>
+		<updates>
+		  <social>
+			<file>justuno_social.xml</file>
+		  </social>
+		</updates>
+	</layout>
+  </frontend> 
+</config>

@@ -1,5 +1,6 @@
 ### Magento ###
 .DS_Store
+.gitignore
 .htaccess
 .htaccess.default
 .htaccess.sample
@@ -94,15 +95,17 @@ LICENSE_AFL.txt
 LICENSE.html
 LICENSE.txt
 LICENSE_EE*
+maintenance.flag.online
 /mage
-media/customer/
-media/dhl/
-media/downloadable/
-media/.htaccess
-media/import/
-media/xmlconnect/
-media/catalog/product/cache/
-media/catalog/product/placeholder/default/
+media/
+#media/customer/
+#media/dhl/
+#media/downloadable/
+#media/.htaccess
+#media/import/
+#media/xmlconnect/
+#media/catalog/product/cache/
+#media/catalog/product/placeholder/default/
 /api.php
 nbproject/
 pear

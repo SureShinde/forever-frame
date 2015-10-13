@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<config>
+	  <sections>
+		<advanced  translate="label" module="social">                    
+		<label>Justuno Social</label>
+		<tab>advanced</tab>
+		<frontend_type>text</frontend_type>
+		<sort_order>0</sort_order>
+		<show_in_default>1</show_in_default>
+		<show_in_website>1</show_in_website>
+		<show_in_store>1</show_in_store>            
+				<groups>
+				      <account translate="label"> 
+					  <label>Create or Connect Existing Justuno Account</label>
+					  <frontend_type>text</frontend_type>
+					  <sort_order>0</sort_order>
+					  <show_in_default>1</show_in_default>
+					  <show_in_website>1</show_in_website>
+					  <show_in_store>1</show_in_store>
+				       <fields>
+                          <email translate="label">
+                            <label>E-Mail</label>
+							<frontend_type>text</frontend_type>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<comment></comment>
+                          </email>
+                          <password translate="label">
+                            <label>Password</label>
+							<frontend_type>password</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<comment></comment>
+                          </password>
+                          <domain translate="label">
+                            <label>Domain</label>
+							<frontend_type>text</frontend_type>
+							<frontend_model>social/domain</frontend_model>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<comment></comment>
+                          </domain>
+                          <embed translate="label">
+                            <label></label>
+							<frontend_type>hidden</frontend_type>
+							<backend_model>social/embed</backend_model>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<comment></comment>
+                          </embed>
+					   </fields>
+					   </account>
+					   
+				      <dashboard translate="label"> 
+					  <label>Set Up or Manage Account</label>
+					  <frontend_type>text</frontend_type>
+					  <sort_order>1</sort_order>
+					  <show_in_default>1</show_in_default>
+					  <show_in_website>1</show_in_website>
+					  <show_in_store>1</show_in_store>
+				       <fields>
+                          <dashboard translate="label">
+							<frontend_type>hidden</frontend_type>
+							<frontend_model>social/dashboard</frontend_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<comment></comment>
+                          </dashboard>
+					   </fields>
+					   </dashboard>
+				</groups>
+		</advanced>
+	  </sections>
+</config>
