@@ -98,7 +98,8 @@ LICENSE.txt
 LICENSE_EE*
 maintenance.flag.online
 /mage
-media/
+/media/*
+!/media/wysiwyg/
 #media/customer/
 #media/dhl/
 #media/downloadable/
