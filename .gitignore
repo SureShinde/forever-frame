@@ -17,6 +17,7 @@ app/design/frontend/default/blank/
 app/design/frontend/default/default/
 app/design/frontend/default/iphone/
 app/design/frontend/default/modern/
+app/design/frontend/foreverframe/
 app/design/frontend/enterprise/default
 app/design/install/
 app/etc/modules/Enterprise_*
