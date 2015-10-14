@@ -1,6 +1,6 @@
 ### Magento ###
 .DS_Store
-.gitignore
+#.gitignore
 .htaccess
 .htaccess.default
 .htaccess.sample
@@ -17,7 +17,7 @@ app/design/frontend/default/blank/
 app/design/frontend/default/default/
 app/design/frontend/default/iphone/
 app/design/frontend/default/modern/
-app/design/frontend/foreverframe/
+app/design/frontend/forever_frame/
 app/design/frontend/enterprise/default
 app/design/install/
 app/etc/modules/Enterprise_*
@@ -99,7 +99,7 @@ LICENSE_EE*
 maintenance.flag.online
 /mage
 /media/*
-!/media/wysiwyg/
+!/media/wysiwyg
 #media/customer/
 #media/dhl/
 #media/downloadable/
